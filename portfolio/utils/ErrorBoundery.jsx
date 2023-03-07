@@ -8,7 +8,8 @@ class ErrorBounders extends React.Component{
 	 static getDerivedStateFromError(error) {
     return { hasError: true };
 	 }
-	  componentDidCatch(error, errorInfo) {
+	
+	  static componentDidCatch(error, errorInfo) {
     logErrorToMyService(error, errorInfo);
   }
 
